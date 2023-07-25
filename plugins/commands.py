@@ -17,7 +17,8 @@ import base64
 logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
-GRP_LNK = "https://t.me/kannadahdall"
+GRP_LNK = "https://t.me/PSMOVIESREQUEST1"
+CHNL_LNK = "https://t.me/kannadahdall"
 skip_series = True
 
 @Client.on_message(filters.command("start") & filters.incoming)
