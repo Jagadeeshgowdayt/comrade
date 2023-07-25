@@ -51,7 +51,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ],[
-            InlineKeyboardButton('JOIN MAIN', url='https://t.me/Psrequest')
+            InlineKeyboardButton('JOIN MAIN', url='https://t.me/Psrequest'),
+            InlineKeyboardButton('JOIN group ', url='https://t.me/PSMOVIESREQUEST1')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -98,7 +99,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('JOIN MAIN', url='https://t.me/Psrequest')
+            InlineKeyboardButton('JOIN MAIN', url='https://t.me/Psrequest'),
+            InlineKeyboardButton('JOIN group ', url='https://t.me/PSMOVIESREQUEST1')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
