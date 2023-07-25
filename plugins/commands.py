@@ -81,7 +81,7 @@ async def start(client, message):
             ],
              [
                 InlineKeyboardButton(
-                    "🦋 SHARE AND SUPPORT 🦋", url='https://telegram.me/filmztube'
+                    "🦋 SHARE AND SUPPORT 🦋", url='https://telegram.me/Psrequest'
                 )
             ]
         ]
@@ -396,7 +396,7 @@ async def delete_all_index(bot, message):
 @Client.on_callback_query(filters.regex(r'^autofilter_delete'))
 async def delete_all_index_confirm(bot, message):
     await Media.collection.drop()
-    await message.answer('♥️ JOIN @Filmztube ♥️')
+    await message.answer('♥️ JOIN @Psrequest ♥️')
     await message.message.edit('Succesfully Deleted All The Indexed Files.')
 
 
