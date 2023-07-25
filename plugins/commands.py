@@ -25,12 +25,12 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/+OJPH-0u_62FmZjI9')
+                InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/Psrequest')
             ],
             [
                 InlineKeyboardButton('🙆🏻 Help 🦾', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ],[
-            InlineKeyboardButton('JOIN MAIN', url='https://t.me/+w0K0MEA4lRhmZjE1')
+            InlineKeyboardButton('JOIN MAIN', url='https://t.me/Psrequest')
             ],
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
@@ -50,14 +50,8 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
             InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('🧞‍♀️ Search 🧐', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/+OJPH-0u_62FmZjI9')
-            ],[
-            InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
-            InlineKeyboardButton('♥️ About ♥️', callback_data='about')
-            ],[
-            InlineKeyboardButton('JOIN MAIN', url='https://t.me/+w0K0MEA4lRhmZjE1')
+        ],[
+            InlineKeyboardButton('JOIN MAIN', url='https://t.me/Psrequest')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -104,13 +98,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🧞‍♀️ Search 🧐', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/+OJPH-0u_62FmZjI9')
-            ],[
-            InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
-            InlineKeyboardButton('♥️ About ♥️', callback_data='about')
-            ],[
-            InlineKeyboardButton('JOIN MAIN', url='https://t.me/+w0K0MEA4lRhmZjE1')
+            InlineKeyboardButton('JOIN MAIN', url='https://t.me/Psrequest')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -162,9 +150,9 @@ async def start(client, message):
                         [
                          [
                          # InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url="https://t.me/+nql2bD_RwpQ2OGNl"),
-                          InlineKeyboardButton("⚜️ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⚜️", url="https://t.me/+OJPH-0u_62FmZjI9")
+                          InlineKeyboardButton("⚜️ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⚜️", url="https://t.me/Psrequest")
                        ],[
-                          InlineKeyboardButton("⚜️ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/+w0K0MEA4lRhmZjE1")
+                          InlineKeyboardButton("⚜️ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/Psrequest")
                          ]
                         ]
                     )
@@ -181,9 +169,9 @@ async def start(client, message):
                         [
                          [
                          # InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url="https://t.me/+nql2bD_RwpQ2OGNl"),
-                          InlineKeyboardButton("⚜️ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⚜️", url="https://t.me/+OJPH-0u_62FmZjI9")
+                          InlineKeyboardButton("⚜️ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⚜️", url="https://t.me/Psrequest")
                        ],[
-                          InlineKeyboardButton("⚜️ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/+w0K0MEA4lRhmZjE1")
+                          InlineKeyboardButton("⚜️ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/Psrequest")
                          ]
                         ]
                     )
