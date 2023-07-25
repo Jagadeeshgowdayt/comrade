@@ -267,7 +267,7 @@ async def next_page(bot, query):
 	   # try:
   #  btn.insert(0,
        # [ 
-	  #  InlineKeyboardButton(text="⚡ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ⚡", url='https://t.me/filmztube')
+	  #  InlineKeyboardButton(text="⚡ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ⚡", url='https://t.me/Psrequest')
       #  ] 
     #)
 
@@ -297,7 +297,7 @@ async def next_page(bot, query):
 	            )
 
             btn.insert(0, [
-                InlineKeyboardButton(text="⚡ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ⚡", url='https://t.me/filmztube'),
+                InlineKeyboardButton(text="⚡ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ⚡", url='https://t.me/Psrequest'),
                 InlineKeyboardButton("! Lᴀɴɢᴜᴀɢᴇs !", callback_data=f"select_lang#{req}")
               ])
             btn.insert(0, [
@@ -417,7 +417,7 @@ async def language_check(bot, query):
                 ]
     btn.insert(0,
         [ 
-            InlineKeyboardButton(text="⚡ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ⚡", url='https://t.me/filmztube'),
+            InlineKeyboardButton(text="⚡ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ⚡", url='https://t.me/Psrequest'),
             InlineKeyboardButton("! Lᴀɴɢᴜᴀɢᴇs !", callback_data=f"select_lang#{userid}")
        ])
 
@@ -532,20 +532,20 @@ async def cb_handler(client: Client , query: CallbackQuery):
                     title = chat.title
                 except:
                     await query.message.edit_text("Make sure I'm present in your group!!", quote=True)
-                    return await query.answer('♥️ JOIN @FILMZTUBE♥️')
+                    return await query.answer('♥️ JOIN @Psrequest♥️')
             else:
                 await query.message.edit_text(
                     "I'm not connected to any groups!\nCheck /connections or connect to any groups",
                     quote=True
                 )
-                return await query.answer('♥️ JOIN @FILMZTUBE ♥️')
+                return await query.answer('♥️ JOIN @Psrequest ♥️')
 
         elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
             grp_id = query.message.chat.id
             title = query.message.chat.title
 
         else:
-            return await query.answer('♥️ JOIN @FILMZTUBE ♥️')
+            return await query.answer('♥️ JOIN @Psrequest ♥️')
 
         st = await client.get_chat_member(grp_id, userid)
         if (st.status == enums.ChatMemberStatus.OWNER) or (str(userid) in ADMINS):
@@ -599,7 +599,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
             reply_markup=keyboard,
             parse_mode=enums.ParseMode.MARKDOWN
         )
-        return await query.answer('♥️ JOIN @FILMZTUBE ♥️')
+        return await query.answer('♥️ JOIN @Psrequest ♥️')
     elif "connectcb" in query.data:
         await query.answer()
 
@@ -620,7 +620,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
             )
         else:
             await query.message.edit_text('Some error occurred!!', parse_mode=enums.ParseMode.MARKDOWN)
-        return await query.answer('♥️ JOIN @FILMZTUBE ♥️')
+        return await query.answer('♥️ JOIN @Psrequest ♥️')
     elif "disconnect" in query.data:
         await query.answer()
 
@@ -643,7 +643,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('♥️ JOIN @FILMZTUBE ♥️')
+        return await query.answer('♥️ JOIN @Psrequest ♥️')
     elif "deletecb" in query.data:
         await query.answer()
 
@@ -661,7 +661,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('♥️ JOIN @FILMZTUBE ♥️')
+        return await query.answer('♥️ JOIN @Psrequest ♥️')
     elif query.data == "backcb":
         await query.answer()
 
@@ -672,7 +672,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer('♥️ JOIN @FILMZTUBE ♥️')
+            return await query.answer('♥️ JOIN @Psrequest ♥️')
         buttons = []
         for groupid in groupids:
             try:
@@ -738,7 +738,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
                 await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
                 return
             else:
-                button = InlineKeyboardButton('🔰 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 🔰', url='https://t.me/filmztube')
+                button = InlineKeyboardButton('🔰 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 🔰', url='https://t.me/Psrequest')
                 button2 = InlineKeyboardButton('⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️', url='https://t.me/+OJPH-0u_62FmZjI9')
                 markup = InlineKeyboardMarkup([[button],[button2]])
                 await client.send_cached_media(
@@ -748,7 +748,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
                     protect_content=True if ident == 'checksubp' else False,
 	            reply_markup = markup
 	           )
-                await query.answer('Check in Filmztube BOT, I have sent files in pm', show_alert=True)
+                await query.answer('Check in Psrequest BOT, I have sent files in pm', show_alert=True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !', show_alert=True)
         except PeerIdInvalid:
@@ -780,7 +780,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{title}"
         await query.answer()
-        button = InlineKeyboardButton('🔰 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 🔰', url='https://t.me/filmztube')
+        button = InlineKeyboardButton('🔰 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 🔰', url='https://t.me/Psrequest')
         button2 = InlineKeyboardButton('⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️', url='https://t.me/+OJPH-0u_62FmZjI9')
         markup = InlineKeyboardMarkup([[button],[button2]])
         await client.send_cached_media(
@@ -798,12 +798,12 @@ async def cb_handler(client: Client , query: CallbackQuery):
             InlineKeyboardButton('⚜️ Add Me To Your Groups ⚜️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
             InlineKeyboardButton('🎈 Search inline ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔍 Search in group', url='https://t.me/Filmz_tube')
+            InlineKeyboardButton('🔍 Search in group', url='https://t.me/Psrequest')
         ], [
             InlineKeyboardButton('🙆🏻 Help ', callback_data='help'),
             InlineKeyboardButton('♥️ About ♥️', callback_data='about')
         ],[
-            InlineKeyboardButton('JOIN FAST😼', url='https://t.me/filmztube')
+            InlineKeyboardButton('JOIN FAST😼', url='https://t.me/Psrequest')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -811,7 +811,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('♥️ JOIN @FILMZTUBE ♥️')
+        await query.answer('♥️ JOIN @Psrequest ♥️')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
@@ -831,7 +831,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/filmztube'),
+            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/Psrequest'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
@@ -892,7 +892,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🔰 JOIN MAIN 🔰", url=f"https://telegram.me/filmztube")
+                InlineKeyboardButton(text=f"🔰 JOIN MAIN 🔰", url=f"https://telegram.me/Psrequest")
             ],[
                 InlineKeyboardButton(text=f"⚡️ JOIN UPDATES 🦋", url=f"https://t.me/+OJPH-0u_62FmZjI9")
 
@@ -921,7 +921,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🔰 JOIN MAIN 🔰", url=f"https://telegram.me/filmztube")
+                InlineKeyboardButton(text=f"🔰 JOIN MAIN 🔰", url=f"https://telegram.me/Psrequest")
             ],[
                 InlineKeyboardButton(text=f"⚡️ JOIN UPDATES 🦋", url=f"https://t.me/+OJPH-0u_62FmZjI9")
 
@@ -949,7 +949,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🔰 JOIN MAIN 🔰", url=f"https://telegram.me/filmztube")
+                InlineKeyboardButton(text=f"🔰 JOIN MAIN 🔰", url=f"https://telegram.me/Psrequest")
             ],[
                 InlineKeyboardButton(text=f"⚡️ JOIN UPDATES 🦋", url=f"https://t.me/+OJPH-0u_62FmZjI9")
 
@@ -977,7 +977,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🔰 JOIN MAIN 🔰", url=f"https://telegram.me/filmztube")
+                InlineKeyboardButton(text=f"🔰 JOIN MAIN 🔰", url=f"https://telegram.me/Psrequest")
             ],[
                 InlineKeyboardButton(text=f"⚡️ JOIN UPDATES 🦋", url=f"https://t.me/+OJPH-0u_62FmZjI9")
 
@@ -1005,7 +1005,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🔰 JOIN MAIN 🔰", url=f"https://telegram.me/filmztube")
+                InlineKeyboardButton(text=f"🔰 JOIN MAIN 🔰", url=f"https://telegram.me/Psrequest")
             ],[
                 InlineKeyboardButton(text=f"⚡️ JOIN UPDATES 🦋", url=f"https://t.me/+OJPH-0u_62FmZjI9")
 
@@ -1227,7 +1227,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
 
         if str(grp_id) != str(grpid):
             await query.message.edit("Your Active Connection Has Been Changed. Go To /settings.")
-            return await query.answer('♥️ JOIN @FILMZTUBE ♥️')
+            return await query.answer('♥️ JOIN @Psrequest ♥️')
 
         if status == "True":
             await save_group_settings(grpid, set_type, False)
@@ -1311,7 +1311,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('♥️ JOIN @FILMZTUBE ♥️')
+    await query.answer('♥️ JOIN @Psrequest ♥️')
 
 async def auto_filter(client, msg, spoll=False):
     if not spoll:
@@ -1343,7 +1343,7 @@ async def auto_filter(client, msg, spoll=False):
                                                                                                                                         ]))
                 
                 l = await message.reply_text(text=f"△ 𝙷𝚎𝚢 `{message.from_user.first_name}`, 😎,\n\nʏᴏᴜʀ ʀᴇQᴜᴇꜱᴛ ʜᴀꜱ ʙᴇᴇɴ ꜱᴇɴᴛ ᴛᴏ ᴏᴜʀ **ᴀᴅᴍɪɴ'ꜱ ᴅᴀꜱʜʙᴏᴀʀᴅ** !\nᴘʟᴇᴀꜱᴇ ᴋᴇᴇᴘ ꜱᴏᴍᴇ ᴘᴀᴛɪᴇɴᴄᴇ !\nᴛʜᴇʏ ᴡɪʟʟ ᴜᴘʟᴏᴀᴅ ɪᴛ ᴀꜱ ꜱᴏᴏɴ ᴀꜱ ᴘᴏꜱꜱɪʙʟᴇ.\n\n➟ 📝𝘾𝙤𝙣𝙩𝙚𝙣𝙩 𝙣𝙖𝙢𝙚 : `{search}`\n➟ 👮𝙍𝙚𝙦𝙪𝙚𝙨𝙩𝙚𝙙 𝘽𝙮 : {user_link} \n\n JOIN: @{MAIN_CHANNEL_USRNM} \n\n",
-                                                                                                       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔰MAIN CHANNEL🔰", url=f'https://t.me/Filmztube')],[InlineKeyboardButton('✪ MOVIES REQUEST GRP ✪', url=f'https://t.me/filmz_tube')],[InlineKeyboardButton("♥️ Thank You ♥", callback_data="close_data")]])
+                                                                                                       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔰MAIN CHANNEL🔰", url=f'https://t.me/Psrequest')],[InlineKeyboardButton('✪ MOVIES REQUEST GRP ✪', url=f'https://t.me/Psrequest')],[InlineKeyboardButton("♥️ Thank You ♥", callback_data="close_data")]])
                 )
 
                 await asyncio.sleep(20)
@@ -1448,7 +1448,7 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0,
         [ 
-            InlineKeyboardButton(text="⚡ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ⚡", url='https://t.me/filmztube'),
+            InlineKeyboardButton(text="⚡ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ⚡", url='https://t.me/Psrequest'),
             InlineKeyboardButton("! Lᴀɴɢᴜᴀɢᴇs !", callback_data=f"select_lang#{message.from_user.id}")
        ])
 
