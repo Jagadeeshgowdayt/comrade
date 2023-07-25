@@ -20,7 +20,7 @@ Here is the help for my COMMANDS."""
 hiii hello how are you"""
     SOURCE_TXT = """<b>NOTE:</b>
 - Lazy Princess is an open source project. 
-- Source - https://github.com/kannadahdallr/LazyPrincess  
+- Source - https://github.com/kannadahdallr/PSMOVIESREQUEST1  
 
 <b>DEVS:</b>
 - <a href=https://t.me/kannadahdall>kannadahdall</a>"""
