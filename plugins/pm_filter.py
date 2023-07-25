@@ -739,7 +739,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
                 return
             else:
                 button = InlineKeyboardButton('🔰 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 🔰', url='https://t.me/Psrequest')
-                button2 = InlineKeyboardButton('⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️', url='https://t.me/+OJPH-0u_62FmZjI9')
+                button2 = InlineKeyboardButton('⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️', url='https://t.me/Psrequest')
                 markup = InlineKeyboardMarkup([[button],[button2]])
                 await client.send_cached_media(
                     chat_id=query.from_user.id,
@@ -781,7 +781,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
             f_caption = f"{title}"
         await query.answer()
         button = InlineKeyboardButton('🔰 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 🔰', url='https://t.me/Psrequest')
-        button2 = InlineKeyboardButton('⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️', url='https://t.me/+OJPH-0u_62FmZjI9')
+        button2 = InlineKeyboardButton('⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️', url='https://t.me/Psrequest')
         markup = InlineKeyboardMarkup([[button],[button2]])
         await client.send_cached_media(
             chat_id=query.from_user.id,
@@ -894,7 +894,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
             ],[
                 InlineKeyboardButton(text=f"🔰 JOIN MAIN 🔰", url=f"https://telegram.me/Psrequest")
             ],[
-                InlineKeyboardButton(text=f"⚡️ JOIN UPDATES 🦋", url=f"https://t.me/+OJPH-0u_62FmZjI9")
+                InlineKeyboardButton(text=f"⚡️ JOIN UPDATES 🦋", url=f"https://t.me/Psrequest")
 
             ]]
             btn_lzdv = [
@@ -923,7 +923,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
             ],[
                 InlineKeyboardButton(text=f"🔰 JOIN MAIN 🔰", url=f"https://telegram.me/Psrequest")
             ],[
-                InlineKeyboardButton(text=f"⚡️ JOIN UPDATES 🦋", url=f"https://t.me/+OJPH-0u_62FmZjI9")
+                InlineKeyboardButton(text=f"⚡️ JOIN UPDATES 🦋", url=f"https://t.me/Psrequest")
 
             ]]
             btn_lzdv = [
@@ -951,7 +951,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
             ],[
                 InlineKeyboardButton(text=f"🔰 JOIN MAIN 🔰", url=f"https://telegram.me/Psrequest")
             ],[
-                InlineKeyboardButton(text=f"⚡️ JOIN UPDATES 🦋", url=f"https://t.me/+OJPH-0u_62FmZjI9")
+                InlineKeyboardButton(text=f"⚡️ JOIN UPDATES 🦋", url=f"https://t.me/Psrequest")
 
             ]]
             btn_lzdv = [
@@ -979,7 +979,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
             ],[
                 InlineKeyboardButton(text=f"🔰 JOIN MAIN 🔰", url=f"https://telegram.me/Psrequest")
             ],[
-                InlineKeyboardButton(text=f"⚡️ JOIN UPDATES 🦋", url=f"https://t.me/+OJPH-0u_62FmZjI9")
+                InlineKeyboardButton(text=f"⚡️ JOIN UPDATES 🦋", url=f"https://t.me/Psrequest")
 
             ]]
             btn_lzdv = [
@@ -1007,7 +1007,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
             ],[
                 InlineKeyboardButton(text=f"🔰 JOIN MAIN 🔰", url=f"https://telegram.me/Psrequest")
             ],[
-                InlineKeyboardButton(text=f"⚡️ JOIN UPDATES 🦋", url=f"https://t.me/+OJPH-0u_62FmZjI9")
+                InlineKeyboardButton(text=f"⚡️ JOIN UPDATES 🦋", url=f"https://t.me/Psrequest")
 
             ]]
             btn_lzdv = [
